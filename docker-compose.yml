@@ -56,7 +56,7 @@ services:
       context: ./backend
     deploy:
       mode: replicated
-      replicas: 4
+      replicas: 2
       resources:
         limits:
           cpus: '0.75'
