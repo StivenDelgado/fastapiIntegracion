@@ -74,7 +74,7 @@ services:
     labels:
         - "traefik.enable=true"
         - "traefik.http.routers.api.rule=PathPrefix(`/api`)"
-        - "traefik.http.services.api.loadbalancer.server.port=90"
+        - "traefik.http.services.api.loadbalancer.server.port=8000"
         - "traefik.http.routers.api.entrypoints=web"
         - "traefik.http.services.api.loadbalancer.sticky=true"
         - "traefik.http.middlewares.api-strip.stripprefix.prefixes=/api"
